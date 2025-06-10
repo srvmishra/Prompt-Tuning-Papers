@@ -13,11 +13,18 @@ Usually there are no common classes between two consecutive tasks. So tasks are 
 5. [Prompt Gradient Projection for Continual Learning](https://openreview.net/forum?id=EH2O3h7sBI)
 6. [Visual Prompt Tuning in Null Space for Continual Learning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/0f06be0008bc568c88d76206aa17954f-Abstract-Conference.html)
 7. [Dynamically Anchored Prompting for Task-Imbalanced Continual Learning](https://www.ijcai.org/proceedings/2024/0456.pdf)
+8. [Recent Advances of Continual Learning in Computer Vision: An Overview](ietresearch.onlinelibrary.wiley.com/doi/10.1049/cvi2.70013)
+9. [A Comprehensive Survey of Continual Learning: Theory, Method and Application](https://ieeexplore.ieee.org/abstract/document/10444954)
+10. [A Unified Continual Learning Framework with General Parameter-Efficient Tuning](https://openaccess.thecvf.com/content/ICCV2023/html/Gao_A_Unified_Continual_Learning_Framework_with_General_Parameter-Efficient_Tuning_ICCV_2023_paper.html)
+11. [CODA-Prompt: COntinual Decomposed Attention-based Prompting for Rehearsal-Free Continual Learning](https://arxiv.org/abs/2211.13218v2)
 
 ## Multi Label Learning
 One sample has multiple labels. Different samples can have some common labels between them.
 
 1. [Texts as Images in Prompt Tuning for Multi-Label Image Recognition](https://openaccess.thecvf.com/content/CVPR2023/papers/Guo_Texts_as_Images_in_Prompt_Tuning_for_Multi-Label_Image_Recognition_CVPR_2023_paper.pdf)
+2. [Learning Disentangled Label Representations for Multi-label Classification](https://arxiv.org/abs/2212.01461v1)
+3. [Multi-Label Lifelong Machine Learning: A Scoping Review of Algorithms, Techniques, and Applications](http://ouci.dntb.gov.ua/en/works/4badWvB7/)
+
 
 ## Continual Multi Label Learning
 Since one sample has many labels, even if we divide the samples into different tasks, there might still be common classes between consecutive tasks. Tasks are disjoint only sample wise. So, a sample from task 2 might contain classes from task 1. From the dataset for task 2, we only have access to task 2 labels, and not task 1 labels. So, first we must use the model trained on task 1 to predict these missing labels on task 2 data and then use these predicted task 1 labels along with the ground truth task 2 labels to train the model on task 2 data. This usually causes problems. 
