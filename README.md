@@ -36,3 +36,7 @@ Since one sample has many labels, even if we divide the samples into different t
 1. For continual multi-label learning data splits and evaluation schemes only: [Knowledge Restore and Transfer for Multi-Label Class Incremental Learning](https://openaccess.thecvf.com/content/ICCV2023/papers/Dong_Knowledge_Restore_and_Transfer_for_Multi-Label_Class-Incremental_Learning_ICCV_2023_paper.pdf)
 2. Labeling the older classes from previous tasks in current images correctly before using these samples to train the new model - [Confidence Self-Calibration for Multi-Label Class-Incremental Learning](https://arxiv.org/abs/2403.12559)
 3. Stability vs Plasticity trade off - can be used to inform what to replay - [Specifying What You Know or Not for Multi-Label Class-Incremental Learning](https://ojs.aaai.org/index.php/AAAI/article/view/34390/36545)
+4. Possible sources for continual multi-label learning data splits -
+   - [Multi-Label Continual Learning Using Augmented Graph Convolutional Network](https://ieeexplore.ieee.org/abstract/document/10221710)
+   - [AGCN: Augmented Graph Convolutional Network for Lifelong Multi-Label Image Recognition](https://ieeexplore.ieee.org/abstract/document/9859622)
+   - Check the citations of these papers and the recent works by the first author - K Du. These guys usually release their codes.
